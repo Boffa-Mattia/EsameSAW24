@@ -1,0 +1,189 @@
+.Form{
+    width: 50%;
+    height: 50%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(100, 99, 99, 0.6);
+    border-radius: 15px;
+}
+
+.logImg{
+  width: 15px;
+}
+
+/*--------------*/
+.card{
+    margin: 0 auto;
+    padding: 2em;
+    background: #1c1f2b;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  @property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+  
+  .card::after, .card::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+  }
+  .card::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+  }
+  @keyframes spin{
+    from{
+      --angle: 0deg;
+    }
+    to{
+      --angle: 360deg;
+    }
+  }
+/*--------------*/
+
+.resetPassword{
+  margin: 15px;
+}
+
+.ForgetP{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.resetPassword p{
+  font-size: small;
+  font-family: cursive;
+  color: whitesmoke;
+}
+
+.inputText{
+    display: grid;
+    justify-items: center;
+    padding: 15px;
+}
+
+.inputText p{
+  margin: 0;
+  padding: 0;
+  font-size: medium;
+  color: whitesmoke;
+}
+
+.inputText input{
+    margin: 5px;
+    border-radius: 5px;
+    color: #a75cc2;
+    font-family: cursive;
+    background-color: #252827;
+    font-size: medium;
+}
+
+.buttonWithOutGoogle{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    text-align: center;
+}
+
+.buttonWithOutGoogle button{
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.buttonWithGoogle{
+    display: flex;
+    justify-content: center;
+}
+
+.buttonWithGoogle img{
+    width: 35px;
+    padding-right: 15px;
+}
+
+.buttonWithGoogle button{
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: none;
+  outline: none;
+  color: #FFF;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 12px;
+}
+.btn::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+/* glow */
+.btn::before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #FF0000, #FF7300, #FFFB00, #48FF00,
+    #00FFD5, #002BFF, #FF00C8, #FF0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height:  calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+@keyframes glowing {
+  0% {background-position: 0 0;}
+  50% {background-position: 400% 0;}
+  100% {background-position: 0 0;}
+}
+
+/* hover */
+.btn:hover::before {
+  opacity: 1;
+}
+
+.btn:active:after {
+  background: transparent;
+}
+
+.btn:active {
+  color: #000;
+  font-weight: bold;
+}

@@ -1,0 +1,38 @@
+.title{
+    text-align: center;
+    width: 50%;
+}
+
+.title span{
+    display: inline-block;
+    width: 58px;
+    height: 58px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: animate 2s linear infinite;
+    line-height: 58px;
+    border: 1px solid rgba(191, 18, 18, 0.4);
+    margin: 10px;
+}
+
+@keyframes animate{
+    0%{
+        color: #f00;
+        box-shadow: 0 2px 10px rgba(255,0,0,1);
+        border: 0 2px 10px rgba(255,0,0,1);
+    }
+    33.3%{
+        color: #ff0;
+        box-shadow: 0 2px 10px rgba(255,255,0,1);
+        border: 0 2px 10px rgba(255,255,0,1);
+    }
+    66.6%{
+        color: #0f0;
+        box-shadow: 0 2px 10px rgba(0,255,0,1);
+        border: 0 2px 10px rgba(0,255,0,1);
+    }
+    100%{
+        color: #f00;
+        box-shadow: 0 2px 10px rgba(255,0,0,1);
+        border: 0 2px 10px rgba(255,0,0,1);
+    }
+}

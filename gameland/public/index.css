@@ -1,0 +1,27 @@
+body{
+    background: #262626;
+    overflow-y: scroll;
+    overflow-x: scroll; 
+}
+
+/* Stile generico per tutte le scrollbar */
+*::-webkit-scrollbar {
+    width: 10px; /* Larghezza della scrollbar */
+  }
+  
+  /* Sfondo del track (area dietro il thumb) */
+  *::-webkit-scrollbar-track {
+    background: transparent; /* Colore del track */
+    border-radius: 10px; /* Arrotondamento */
+  }
+  
+  /* Colore del thumb (la barra scorrevole) */
+  *::-webkit-scrollbar-thumb {
+    background: #888; /* Colore del thumb */
+    border-radius: 10px; /* Arrotondamento */
+  }
+  
+  /* Hover sul thumb */
+  *::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Colore del thumb quando si passa sopra */
+  }

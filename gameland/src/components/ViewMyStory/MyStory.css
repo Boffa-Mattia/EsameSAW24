@@ -1,0 +1,240 @@
+.scollDown{
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    gap: 15px;
+}
+
+.scollDown img{
+    width: 25px;
+    height: 25px;
+
+}
+
+.scollDown h2{
+    margin: 0;
+    font-size: medium;
+    color: whitesmoke;
+}
+
+.bladDivisor{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bladDivisor img{
+    width: 50px;
+    height: 50px;
+  }
+
+.container{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    z-index: 1; 
+}
+
+  
+.container::before {
+  content: '';
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),url('./gamer.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.7; /* Apply opacity only to the background */
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Push background behind the content */
+  pointer-events: none; /* Prevents interaction with the background */
+}
+
+.message{
+    width: 100%;
+    padding: 15px;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.message h1{
+    color: whitesmoke;
+    font-size: xxx-large;
+    font-family: monospace;
+    margin: 0;
+    height: 150px;
+}
+
+.message h2{
+    color: whitesmoke;
+    font-size: large;
+    font-family: cursive;
+    text-align: center;
+}
+
+.message img{
+    width: 200px;
+}
+
+.public{
+    width: 90%;
+    text-align: right;
+}
+
+.public p{
+    color: white;
+    font-size: small;
+    font-family: cursive;
+    margin: 0;
+    margin-right: 15px;
+}
+
+.stories{
+    width: 100%;
+    height: 80%;
+    display: flex;
+}
+
+.titleStorys{
+    width: 100%;
+}
+
+
+.singleStory{
+    min-width: 30%;
+    max-width: 40%;
+    margin: 2%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    border-radius: 10px;
+    background: transparent;
+}
+
+.videogame{
+    height: 10%;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.videogame input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: white;
+    font-family: cursive;
+    border-radius: 10px;
+    font-size: 150%;
+    padding: 0;
+    border: 0;
+}
+
+.story{
+    width: 90%;
+    height: 70%;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 0;
+    position: relative; 
+}
+
+.story::before {
+    content: ''; /* Crea un contenuto vuoto per lo sfondo */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    background-color: #28282e;
+    opacity: 0.4; /* Opacizza solo lo sfondo */
+    z-index: -1; /* Posiziona lo sfondo dietro al contenuto */
+    pointer-events: none; /* Impedisce l'interazione con lo sfondo */
+}
+
+.story textarea{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: white;
+    font-size: large;
+    font-family: cursive;
+    border: 0;
+}
+
+.buttonDeleteModify{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.gntMy{
+    width: 25%;
+    color: whitesmoke;
+    font-family: cursive;
+    font-size: large;
+    border-radius: 15px;
+    background: transparent;
+    border: solid 1px;
+}
+
+.gntMy:hover{
+    background-color: #58586754;
+    
+}
+
+.pub{
+    width: 25%;
+    color: white;
+    font-family: cursive;
+    font-size: large;
+    border-radius: 15px;
+    background: transparent;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+    transition: 0.5s;
+    border: solid 1px;
+}
+
+.pub:hover{
+    background-color: rgb(12, 134, 12);
+    color: black;
+    transition: 0.5s;
+}
+
+.pri{
+    width: 25%;
+    color: white;
+    font-family: cursive;
+    font-size: large;
+    border-radius: 15px;
+    background: transparent;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+    transition: 0.5s;
+    border: solid 1px;
+}
+
+.pri:hover{
+    background-color: rgb(166, 10, 10);
+    color: black;
+    transition: 0.5s;
+}
+
+

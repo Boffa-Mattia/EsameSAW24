@@ -1,0 +1,49 @@
+.FormStory{
+    width: 70%;
+    height: 80%;
+    border-radius: 15px;
+}
+
+.Videogame{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Videogame input{
+    width: 75%;
+    height: 60%;
+    border-radius: 15px;
+    color: #a75cc2;
+    font-family: cursive;
+    background-color: #252827;
+}
+
+.Story{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Story textarea{
+    width: 80%;
+    height: 95%;
+    color: #a75cc2;
+    font-family: cursive;
+    background-color: #252827;
+    border-radius: 5px;
+}
+
+.Public-Save{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+}
+
+.Public-Save button{
+    width: 30%;
+}
+
